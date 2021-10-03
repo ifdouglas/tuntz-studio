@@ -1,0 +1,16 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(40, 30, 93, 1), rgba(17, 17, 17, 1));
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+}
