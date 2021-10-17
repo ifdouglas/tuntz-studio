@@ -34,7 +34,7 @@ export default defineComponent({
 
   .tuntz-logo {
     opacity: 0;
-    animation: spaceInDown 1s linear forwards;
+    animation: opacityPuffIn 1s linear forwards;
     z-index: 2;
   }
 
