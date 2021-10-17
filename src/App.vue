@@ -1,20 +1,26 @@
 <template>
   <div class="app">
-    <!-- <Nav /> -->
+    <Nav />
     <div class="content">
       <router-view/>
     </div>
+    <Footer />
+    <Particles />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-// import Nav from '@/components/Nav.vue';
+import Particles from '@/components/Particles.vue';
+import Nav from '@/components/Nav.vue';
+import Footer from '@/components/Footer.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    // Nav,
+    Nav,
+    Footer,
+    Particles,
   },
 });
 </script>
@@ -29,6 +35,9 @@ export default defineComponent({
 
 .content {
   position: relative;
-  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 </style>

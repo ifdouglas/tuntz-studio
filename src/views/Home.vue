@@ -1,25 +1,56 @@
 <template>
   <div class="home">
-    <img :src="logo" alt="TUNTZ Studio Logo" />
-    <Particles />
+    <!-- <img :src="logo" alt="TUNTZ Studio Logo" /> -->
+    <img class="tuntz-logo" :src="TuntzLogoSVG" alt="TUNTZ Logo" />
+    <img class="studio-logo" :src="StudioLogoSVG" alt="Studio Logo" />
+    <!-- <img class="tech-dev-logo" :src="TechDevLogoSVG" alt="Tecnologia e Programação Logo" /> -->
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Particles from '@/components/Particles.vue'; // @ is an alias to /src
-import logo from '@/assets/images/logo.svg';
+import TuntzLogoSVG from '@/assets/images/tuntz-logo.svg';
+import StudioLogoSVG from '@/assets/images/studio-logo.svg';
+import TechDevLogoSVG from '@/assets/images/tech-dev-logo.svg';
 
 export default defineComponent({
   name: 'Home',
-  components: {
-    Particles,
-  },
 
   setup() {
     return {
-      logo,
+      TuntzLogoSVG,
+      StudioLogoSVG,
+      TechDevLogoSVG,
     };
   },
 });
 </script>
+
+<style scoped lang="scss">
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tuntz-logo {
+    opacity: 0;
+    animation: spaceInDown 1s linear forwards;
+    z-index: 2;
+  }
+
+  .studio-logo {
+    opacity: 0;
+    position: relative;
+    animation: 1s boingInUp 1s linear forwards;
+    z-index: 1;
+    top: -60px;
+  }
+
+  .tech-dev-logo {
+    opacity: 0;
+    position: relative;
+    animation: 1s boingInUp 2s linear forwards, 2s glitch 4s linear infinite;
+    z-index: 1;
+    top: -50px;
+  }
+</style>
