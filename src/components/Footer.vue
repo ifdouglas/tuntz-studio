@@ -1,8 +1,8 @@
 <template>
 <section>
-  <router-link to="/">
+  <a href="/">
     <img :src="HomeSVG" alt="Início" />
-  </router-link>
+  </a>
   <a href="https://api.whatsapp.com/send?phone=+55999551889">
     <img :src="WhatsAppSVG" alt="WhatsApp" />
   </a>
