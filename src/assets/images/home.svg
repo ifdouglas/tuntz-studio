@@ -9,7 +9,9 @@
 </g>
 <defs>
 <linearGradient id="tuntz-home" x1="50.35" y1="5" x2="50.35" y2="94.3" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F9E44D"/>
+<stop stop-color="#FAE764"/>
+<stop offset="0.6875" stop-color="#D6C021"/>
+<stop offset="0.958333" stop-color="#C5AD00"/>
 </linearGradient>
 </defs>
 </svg>
