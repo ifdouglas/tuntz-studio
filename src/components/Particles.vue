@@ -46,7 +46,7 @@ $time-4: 600s;
 
 .animation {
   position: fixed;
-  animation: fadeIn 6s ease-in forwards;
+  animation: smoothFadeIn 6s ease-in forwards;
   top: 0;
   left: 0;
   width: 100%;
