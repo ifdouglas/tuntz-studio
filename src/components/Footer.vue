@@ -3,9 +3,9 @@
   <router-link to="/">
     <img :src="HomeSVG" alt="Início" />
   </router-link>
-  <router-link to="/">
+  <a href="https://api.whatsapp.com/send?phone=+55999551889">
     <img :src="WhatsAppSVG" alt="WhatsApp" />
-  </router-link>
+  </a>
 </section>
 </template>
 
