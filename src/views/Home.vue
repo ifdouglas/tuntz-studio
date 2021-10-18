@@ -1,9 +1,7 @@
 <template>
   <div class="home">
-    <!-- <img :src="logo" alt="TUNTZ Studio Logo" /> -->
     <img class="tuntz-logo" :src="TuntzLogoSVG" alt="TUNTZ Logo" />
     <img class="studio-logo" :src="StudioLogoSVG" alt="Studio Logo" />
-    <!-- <img class="tech-dev-logo" :src="TechDevLogoSVG" alt="Tecnologia e Programação Logo" /> -->
   </div>
 </template>
 
@@ -43,7 +41,7 @@ export default defineComponent({
     position: relative;
     animation: 1s boingInUp 1s linear forwards;
     z-index: 1;
-    top: -60px;
+    top: -55px;
   }
 
   .tech-dev-logo {

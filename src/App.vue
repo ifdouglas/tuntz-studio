@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <Nav />
+    <Navbar />
     <div class="content">
       <router-view/>
     </div>
@@ -12,13 +12,13 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Particles from '@/components/Particles.vue';
-import Nav from '@/components/Nav.vue';
+import Navbar from '@/components/Nav/Navbar.vue';
 import Footer from '@/components/Footer.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    Nav,
+    Navbar,
     Footer,
     Particles,
   },
