@@ -8,9 +8,9 @@ const routes: Array<RouteRecordRaw> = [
     component: Home,
   },
   {
-    path: '/smart',
-    name: 'Casa Inteligente',
-    component: () => import(/* webpackChunkName: "sites" */ '../views/SmartHome.vue'),
+    path: '/traffic',
+    name: 'Tráfego Pago',
+    component: () => import(/* webpackChunkName: "sites" */ '../views/PaidTraffic.vue'),
   },
   {
     path: '/apps',
@@ -18,12 +18,12 @@ const routes: Array<RouteRecordRaw> = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "apps" */ '../views/CreateApps.vue'),
+    component: () => import(/* webpackChunkName: "apps" */ '../views/Apps.vue'),
   },
   {
     path: '/sites',
     name: 'Criação de Sites',
-    component: () => import(/* webpackChunkName: "sites" */ '../views/CreateSites.vue'),
+    component: () => import(/* webpackChunkName: "sites" */ '../views/Sites.vue'),
   },
   {
     path: '/instagram',

@@ -1,6 +1,6 @@
 <template>
 <section>
-  <h1>This is an CreateSites page</h1>
+  <h1>This is an Apps page</h1>
 </section>
 </template>
 
@@ -8,7 +8,7 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'CreateSites',
+  name: 'Apps',
 });
 </script>
 

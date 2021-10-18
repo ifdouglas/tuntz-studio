@@ -1,6 +1,6 @@
 <template>
 <section>
-  <h1>This is an Smart Home page</h1>
+  <h1>This is an Paid Traffic page</h1>
 </section>
 </template>
 
@@ -8,7 +8,7 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'SmartHome',
+  name: 'PaidTraffic',
 });
 </script>
 

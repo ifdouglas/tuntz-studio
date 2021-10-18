@@ -1,3 +1,13 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes spaceInDown {
   0% {
     opacity: 0;

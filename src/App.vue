@@ -28,13 +28,20 @@ export default defineComponent({
 <style lang="scss">
 .app {
   display: flex;
-  justify-content: center;
-  width: 900px;
+  flex: 1;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
   height: 900px;
 }
 
 .content {
   position: relative;
+  top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
