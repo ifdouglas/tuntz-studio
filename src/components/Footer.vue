@@ -36,6 +36,7 @@ export default defineComponent({
     flex-direction: row;
     justify-content: space-around;
     width: 120px;
+    animation: fadeIn 4s linear forwards;
 
     a {
       font-weight: bold;

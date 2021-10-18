@@ -50,6 +50,7 @@ export default defineComponent({
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  animation: fadeIn 4s linear forwards;
 
   a {
     font-weight: bold;
