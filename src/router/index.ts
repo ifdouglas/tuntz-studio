@@ -13,12 +13,12 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "sites" */ '../views/PaidTraffic.vue'),
   },
   {
-    path: '/apps',
-    name: 'Criação de Apps',
+    path: '/logos',
+    name: 'Design de Logos',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "apps" */ '../views/Apps.vue'),
+    component: () => import(/* webpackChunkName: "branding" */ '../views/DesignLogos.vue'),
   },
   {
     path: '/sites',
@@ -26,14 +26,14 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "sites" */ '../views/Sites.vue'),
   },
   {
-    path: '/instagram',
+    path: '/instagram-filters',
     name: 'Filtros para Instagram',
     component: () => import(/* webpackChunkName: "instagram" */ '../views/InstagramFilters.vue'),
   },
   {
-    path: '/marketing',
-    name: 'Makrketing Digital',
-    component: () => import(/* webpackChunkName: "marketing" */ '../views/MarketingDigital.vue'),
+    path: '/instagram-manager',
+    name: 'Instagram Manager',
+    component: () => import(/* webpackChunkName: "marketing" */ '../views/InstagramManager.vue'),
   },
 ];
 

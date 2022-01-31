@@ -1,18 +1,18 @@
 <template>
   <div class="nav">
-    <router-link to="/traffic">
+    <router-link to="/traffic" active-class="active">
       <img :src="PaidTrafficSVG" alt="Tráfego Pago" />
     </router-link>
-    <router-link to="/instagram">
+    <router-link to="/instagram-filters" active-class="active">
       <img :src="InstagramFiltersSVG" alt="Filtros para Instagram" />
     </router-link>
-    <router-link to="/marketing">
-      <img :src="InstagramManagerSVG" alt="Marketing Digital" />
+    <router-link to="/instagram-manager" active-class="active">
+      <img :src="InstagramManagerSVG" alt="Gerenciamento de Instagram" />
     </router-link>
-    <router-link to="/apps">
-      <img :src="CreateAppsSVG" alt="Criação de Apps" />
+    <router-link to="/logos" active-class="active">
+      <img :src="DesignLogosSVG" alt="Design de Logos" />
     </router-link>
-    <router-link to="/sites">
+    <router-link to="/sites" active-class="active">
       <img :src="CreateSitesSVG" alt="Criação de Sites" />
     </router-link>
   </div>
@@ -21,9 +21,10 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import PaidTrafficSVG from '@/assets/images/paid-traffic.svg';
-import CreateAppsSVG from '@/assets/images/create-apps.svg';
+import DesignLogosSVG from '@/assets/images/design-logos.svg';
 import CreateSitesSVG from '@/assets/images/create-sites.svg';
 import InstagramFiltersSVG from '@/assets/images/instagram-filters.svg';
+import MarketingDigitalSVG from '@/assets/images/digital-marketing.svg';
 import InstagramManagerSVG from '@/assets/images/instagram-manager.svg';
 
 export default defineComponent({
@@ -32,9 +33,10 @@ export default defineComponent({
   setup() {
     return {
       PaidTrafficSVG,
-      CreateAppsSVG,
+      DesignLogosSVG,
       CreateSitesSVG,
       InstagramFiltersSVG,
+      MarketingDigitalSVG,
       InstagramManagerSVG,
     };
   },
@@ -56,9 +58,11 @@ export default defineComponent({
     font-weight: bold;
     color: #ffffff;
     margin: 10px;
+    scale: .8;
 
     &.router-link-exact-active {
       color: #ffffff;
+      scale: 1;
     }
 
     &:hover {

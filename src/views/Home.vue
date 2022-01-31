@@ -29,11 +29,13 @@ export default defineComponent({
   .home {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   .tuntz-logo {
     opacity: 0;
     animation: opacityPuffIn 1s linear forwards;
+    height: fit-content;
     z-index: 2;
   }
 
