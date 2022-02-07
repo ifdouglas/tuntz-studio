@@ -2,7 +2,7 @@
   <div class="home">
     <img class="tuntz-logo" :src="TuntzLogoSVG" alt="TUNTZ Logo" />
     <img class="studio-logo" :src="StudioLogoSVG" alt="Studio Logo" />
-    <!-- <img class="tech-dev-logo" :src="TechDevLogoSVG" alt="Tecnologia e Programação Logo" /> -->
+    <img class="tech-dev-logo" :src="SloganLogoSVG" alt="Design, Marketing e Programação" />
   </div>
 </template>
 
@@ -10,7 +10,7 @@
 import { defineComponent } from 'vue';
 import TuntzLogoSVG from '@/assets/images/tuntz-logo.svg';
 import StudioLogoSVG from '@/assets/images/studio-logo.svg';
-// import TechDevLogoSVG from '@/assets/images/tech-dev-logo.svg';
+import SloganLogoSVG from '@/assets/images/slogan-logo.svg';
 
 export default defineComponent({
   name: 'Home',
@@ -19,7 +19,7 @@ export default defineComponent({
     return {
       TuntzLogoSVG,
       StudioLogoSVG,
-      // TechDevLogoSVG,
+      SloganLogoSVG,
     };
   },
 });

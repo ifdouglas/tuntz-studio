@@ -3,6 +3,9 @@
   <a href="/">
     <img :src="HomeSVG" alt="Início" />
   </a>
+  <a href="https://apps.apple.com/br/app/coffing/id1606988176" target="_blank">
+    <img :src="CoffingLogoSVG" alt="Coffing" />
+  </a>
   <a href="https://api.whatsapp.com/send?phone=+55999551889">
     <img :src="WhatsAppSVG" alt="WhatsApp" />
   </a>
@@ -12,6 +15,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import HomeSVG from '@/assets/images/home.svg';
+import CoffingLogoSVG from '@/assets/images/coffing-logo.svg';
 import WhatsAppSVG from '@/assets/images/whatsapp.svg';
 
 export default defineComponent({
@@ -20,6 +24,7 @@ export default defineComponent({
   setup() {
     return {
       HomeSVG,
+      CoffingLogoSVG,
       WhatsAppSVG,
     };
   },

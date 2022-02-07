@@ -2,7 +2,7 @@
   <div class="app">
     <Navbar />
     <div class="content">
-      <router-view/>
+      <router-view />
     </div>
     <Footer />
     <Particles />
@@ -38,7 +38,6 @@ export default defineComponent({
   width: 100%;
   height: 900px;
 }
-
 .content {
   position: relative;
   top: 50px;

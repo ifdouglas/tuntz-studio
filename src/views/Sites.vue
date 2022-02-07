@@ -1,7 +1,7 @@
 <template>
-<section>
-  <h1>This is an Sites page</h1>
-</section>
+  <section>
+    <h1>This is an Sites page</h1>
+  </section>
 </template>
 
 <script lang="ts">
@@ -12,5 +12,4 @@ export default defineComponent({
 });
 </script>
 
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>

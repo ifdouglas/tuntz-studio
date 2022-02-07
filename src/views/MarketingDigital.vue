@@ -1,6 +1,6 @@
 <template>
 <section>
-  <h1>This is an Marketing Digital page</h1>
+  <h1>Propaganda virtual</h1>
 </section>
 </template>
 

@@ -1,10 +1,11 @@
 <template>
 <section>
-  <h1>Gerenciamento de Instagram é o ato de organizar suas atividades na rede social.</h1>
+  <h1>Organizamos suas atividades na rede social.</h1>
   <ul>
-    <li>Agendar publicações</li>
-    <li>Programar respostas automáticas</li>
-    <li>Acompanhar relatórios de tráfego</li>
+    <li>Criamos artes para postagens</li>
+    <li>Agendamos publicações</li>
+    <li>Configuramos respostas automáticas</li>
+    <li>Acompanhamos relatórios de tráfego</li>
   </ul>
 </section>
 </template>
