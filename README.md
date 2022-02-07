@@ -1,4 +1,4 @@
-# tuntz-studio
+# TUNTZ Studio
 
 ## Project setup
 ```
