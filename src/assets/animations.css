@@ -43,7 +43,7 @@
   }
 
   7% {
-    transform: skew(-0.5deg, -0.9deg);
+    transform: skew(-5deg, -10deg);
     opacity: 0.75;
   }
 
@@ -58,7 +58,7 @@
   }
 
   30% {
-    transform: skew(0.8deg, -0.1deg);
+    transform: skew(5deg, -10deg);
     opacity: 0.75;
   }
 
@@ -73,7 +73,7 @@
   }
 
   55% {
-    transform: skew(-1deg, 0.2deg);
+    transform: skew(-10deg, 2deg);
     opacity: 0.75;
   }
 
@@ -88,7 +88,7 @@
   }
 
   75% {
-    transform: skew(0.4deg, 1deg);
+    transform: skew(4deg, 10deg);
     opacity: 0.75;
   }
 
@@ -119,6 +119,24 @@
     -webkit-transform: scale(1) translate(0%, 0%);
     transform: scale(1) translate(0%, 0%);
   }
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #FF461E,
+      0 0 80px #FF461E,
+      0 0 90px #FF461E,
+      0 0 100px #FF461E,
+      0 0 150px #FF461E;
+  }
+
+  20%, 24%, 55% {        
+    text-shadow: none;
+  }    
 }
 
 @keyframes boingInUp {

@@ -1,25 +1,31 @@
 <template>
-  <div class="home">
+  <a href="/apps" :class="{ 'home': true, 'scale-down': false }">
     <img class="tuntz-logo" :src="TuntzLogoSVG" alt="TUNTZ Logo" />
     <img class="studio-logo" :src="StudioLogoSVG" alt="Studio Logo" />
-    <img class="tech-dev-logo" :src="SloganLogoSVG" alt="Design, Marketing e Programação" />
-  </div>
+  </a>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { computed, defineComponent } from 'vue';
+import { useRoute } from 'vue-router';
 import TuntzLogoSVG from '@/assets/images/tuntz-logo.svg';
 import StudioLogoSVG from '@/assets/images/studio-logo.svg';
-import SloganLogoSVG from '@/assets/images/slogan-logo.svg';
 
 export default defineComponent({
   name: 'Home',
 
   setup() {
+    const currentRoute = computed(() => {
+      const route = useRoute().name;
+      // eslint-disable-next-line no-console
+      console.log('route', route);
+      return route;
+    });
+
     return {
       TuntzLogoSVG,
       StudioLogoSVG,
-      SloganLogoSVG,
+      currentRoute,
     };
   },
 });
@@ -30,28 +36,24 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-top: 20px;
+
+    img {
+      width: 250px;
+      opacity: 0;
+    }
   }
 
   .tuntz-logo {
-    opacity: 0;
     animation: opacityPuffIn 1s linear forwards;
     height: fit-content;
     z-index: 2;
   }
 
   .studio-logo {
-    opacity: 0;
     position: relative;
     animation: 1s boingInUp 1s linear forwards;
     z-index: 1;
-    top: -55px;
-  }
-
-  .tech-dev-logo {
-    opacity: 0;
-    position: relative;
-    animation: 1s boingInUp 2s linear forwards, 2s glitch 4s linear infinite;
-    z-index: 1;
-    top: -50px;
+    top: -30px;
   }
 </style>

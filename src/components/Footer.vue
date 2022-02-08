@@ -1,6 +1,6 @@
 <template>
 <section>
-  <a href="/">
+  <a href="/apps">
     <img :src="HomeSVG" alt="Início" />
   </a>
   <a href="https://apps.apple.com/br/app/coffing/id1606988176" target="_blank">

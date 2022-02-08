@@ -1,15 +1,16 @@
 <template>
-  <section>
-    <h1>Ainda não sabemos o que escrever aqui..</h1>
-  </section>
+<section>
+  <h1>WEB 3.0</h1>
+</section>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'Sites',
+  name: 'Metaverse',
 });
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+</style>

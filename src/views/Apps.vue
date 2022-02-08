@@ -1,6 +1,6 @@
 <template>
 <section>
-  <h1>This is an Apps page</h1>
+  <h1>Ainda não sabemos o que escrever aqui..</h1>
 </section>
 </template>
 

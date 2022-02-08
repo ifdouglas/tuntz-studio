@@ -1,6 +1,6 @@
 <template>
 <section>
-  <h1>Propaganda virtual</h1>
+  <h1>Ainda não sabemos o que escrever aqui..</h1>
 </section>
 </template>
 

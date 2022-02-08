@@ -1,11 +1,9 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-import Home from '@/views/Home.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Home',
-    component: Home,
+    redirect: '/apps',
   },
   {
     path: '/traffic',
@@ -24,6 +22,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/sites',
     name: 'Criação de Sites',
     component: () => import(/* webpackChunkName: "sites" */ '../views/Sites.vue'),
+  },
+  {
+    path: '/apps',
+    name: 'Aplicativos',
+    component: () => import(/* webpackChunkName: "instagram" */ '../views/Apps.vue'),
+  },
+  {
+    path: '/metaverse',
+    name: 'Metaverso',
+    component: () => import(/* webpackChunkName: "instagram" */ '../views/Metaverse.vue'),
   },
   {
     path: '/instagram-filters',

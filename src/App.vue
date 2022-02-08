@@ -1,5 +1,6 @@
 <template>
   <div class="app">
+    <Home />
     <Navbar />
     <div class="content">
       <router-view />
@@ -14,6 +15,7 @@ import { defineComponent } from 'vue';
 import Particles from '@/components/Particles.vue';
 import Navbar from '@/components/Nav/Navbar.vue';
 import Footer from '@/components/Footer.vue';
+import Home from '@/views/Home.vue';
 
 export default defineComponent({
   name: 'App',
@@ -21,6 +23,7 @@ export default defineComponent({
     Navbar,
     Footer,
     Particles,
+    Home,
   },
 });
 </script>
@@ -44,6 +47,7 @@ export default defineComponent({
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: lighter;
   z-index: 2;
 }
 </style>

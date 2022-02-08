@@ -1,4 +1,6 @@
 @import url('animations.css');
+@import url('fonts/lato.css');
+@import url('fonts/homenaje.css');
 
 html,
 body {
@@ -14,7 +16,7 @@ body,
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Homenaje', 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #ffffff;
@@ -22,19 +24,6 @@ body,
   height: 100%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: lighter;
 }
-
-/* 
-@media screen and (min-width: 1024px) {
-  
-}
-
-@media screen and (min-width: 834px) {
-  
-}
-
-@media screen and (min-width: 320px) {
-  
-} */
