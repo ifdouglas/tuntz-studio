@@ -45,7 +45,7 @@ export default defineComponent({
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 5px 15px;
+      padding: 5px;
     }
 
     &.router-link-exact-active {

@@ -157,6 +157,24 @@
   }
 }
 
+@keyframes boing {
+  0% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(-30deg);
+    transform: perspective(800px) rotateX(-30deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(0deg);
+    transform: perspective(800px) rotateX(0deg);
+  }
+}
+
 @keyframes opacityPuffIn {
   0% {
     opacity: 0;

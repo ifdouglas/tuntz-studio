@@ -36,7 +36,9 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-top: 20px;
+    margin: 20px;
+    height: 155px;
+    z-index: 3;
 
     img {
       width: 250px;
