@@ -20,7 +20,6 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-/* Config */
 $color-bg: #111;
 $color-particle: #fff;
 $spacing: 2560px;
@@ -29,7 +28,6 @@ $time-2: 120s;
 $time-3: 180s;
 $time-4: 600s;
 
-/* Pauls awesome mixin */
 @function particles($max) {
   $val: 0px 0px $color-particle;
 

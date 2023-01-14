@@ -19,9 +19,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-    .button {
-      width: 200px;
-    }
+  .button {
+    width: 200px;
+  }
 
   .title {
     color: #FF461E;
